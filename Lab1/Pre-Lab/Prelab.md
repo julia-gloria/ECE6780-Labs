@@ -25,13 +25,13 @@ The STM32F072R8 has 128 kilobytes of FLASH memory.
 
 ### What does the acronym "HAL" stand for?
 
-> In computers, a hardware abstraction layer (HAL) is a layer of programming that allows a computer OS to interact with a hardware device at a general or abstract level rather than at a detailed hardware level. *([https://www.sciencedirect.com/science/chapter/monograph/pii/B978012809641300003X](Mobile Cloud Computing), 2018, pages 31-64)*
+> In computers, a hardware abstraction layer (HAL) is a layer of programming that allows a computer OS to interact with a hardware device at a general or abstract level rather than at a detailed hardware level. *([Mobile Cloud Computing](https://www.sciencedirect.com/science/chapter/monograph/pii/B978012809641300003X), 2018, pages 31-64)*
 
 HAL stands for "Hardware Abstraction Layer". A well designed HAL allows for hardware to be written on many different devices without hardware dependencies that may make it fail.
 
 ### What is the STM32CubeMX program used for?
 
-> STM32CubeMX is a graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors, as well as the generation of the corresponding initialization C code for the Arm Cortex-M core or a partial Linux Device Tree for the Arm Cortex-A core, through a step-by-step process. *([https://www.st.com/en/development-tools/stm32cubemx.html](STM32Cube Initialization Code Generator), STMicroelectronics)*
+> STM32CubeMX is a graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors, as well as the generation of the corresponding initialization C code for the Arm Cortex-M core or a partial Linux Device Tree for the Arm Cortex-A core, through a step-by-step process. *([STM32Cube Initialization Code Generator](https://www.st.com/en/development-tools/stm32cubemx.html), STMicroelectronics)*
 
 The STM32CubeMX is a tool provided by STMelectronics to help configure specific STM32 microcontrollers and microprocessors.
 
@@ -45,7 +45,8 @@ The main function essentially acts as a loop for the embedded application, which
 
 ### In the system's memory table, are the peripheral registers higher or lower in address than the SRAM?
 
-![Memory Map](./img/Memory-Map.png) *(PM0215 Rev 2, Page 12)*
+![Memory Map](./img/Memory-Map.png) 
+*(PM0215 Rev 2, Page 12)*
 
 In the ststem's memory table, the peripheral registers are higher in address to the SRAM.
 
@@ -89,4 +90,4 @@ This delay function uses a variable in the SysTick Interrupt Service Routine (IS
 
 ### Why should you avoid floating-point values on an STM32F0?
 
-The STM32F0 lacks a floating point unit (FPU), and would be very difficult to implement with the hardware in the microcontroller. Floating point values are approximate representations of decimal values for arithmetic use, and can approximate up to a certain degree of freedom depending on its implementation. [https://www.geeksforgeeks.org/computer-organization-architecture/ieee-standard-754-floating-point-numbers/](IEEE Standard 754), is a common way in how decimal values can be approximated and configured with one- or two- degrees of precision.
+The STM32F0 lacks a floating point unit (FPU), and would be very difficult to implement with the hardware in the microcontroller. Floating point values are approximate representations of decimal values for arithmetic use, and can approximate up to a certain degree of freedom depending on its implementation. [IEEE Standard 754](https://www.geeksforgeeks.org/computer-organization-architecture/ieee-standard-754-floating-point-numbers/), is a common way in how decimal values can be approximated and configured with one- or two- degrees of precision.
